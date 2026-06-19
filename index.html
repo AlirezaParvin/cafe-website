@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <title>کافه ترانه</title>
+    <meta charset="UTF-8">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        background-color: #fdf6ec;
+        color: #3d2b1f;
+      }
+
+      /* Navbar */
+      nav {
+        background-color: #3d2b1f;
+        padding: 18px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: #f5c97a;
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+        font-size: 16px;
+      }
+
+      .nav-links a:hover {
+        color: #f5c97a;
+      }
+
+      /* Hero */
+      .hero {
+        background-color: #3d2b1f;
+        color: white;
+        text-align: center;
+        padding: 120px 20px;
+      }
+
+      .hero h1 {
+        font-size: 56px;
+        color: #f5c97a;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        color: #d4b896;
+        margin-bottom: 35px;
+      }
+
+      .btn {
+        background-color: #f5c97a;
+        color: #3d2b1f;
+        padding: 14px 35px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: bold;
+      }
+
+      /* منو */
+      .menu-section {
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .menu-section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #3d2b1f;
+      }
+
+      .menu-cards {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+
+      .menu-card {
+        background-color: white;
+        border-radius: 14px;
+        padding: 30px 25px;
+        width: 200px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+
+      .menu-card .icon {
+        font-size: 48px;
+        margin-bottom: 15px;
+      }
+
+      .menu-card h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .menu-card p {
+        color: #8a6a50;
+        font-size: 15px;
+      }
+
+      /* گالری */
+      .gallery-section {
+        text-align: center;
+        padding: 70px 20px;
+        background-color: #f3e6d3;
+      }
+
+      .gallery-section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .gallery-item {
+        width: 220px;
+        height: 220px;
+        background-color: #3d2b1f;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      }
+
+      /* تماس */
+      .contact-section {
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .contact-section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      .contact-box {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 14px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+
+      .contact-box input,
+      .contact-box textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #d4b896;
+        border-radius: 8px;
+        font-family: Arial;
+        font-size: 15px;
+      }
+
+      .contact-box textarea {
+        height: 100px;
+        resize: none;
+      }
+
+      .contact-box button {
+        background-color: #3d2b1f;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+        color: #8a6a50;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #3d2b1f;
+        color: #d4b896;
+        text-align: center;
+        padding: 30px;
+        margin-top: 60px;
+      }
+
+      footer span {
+        color: #f5c97a;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">☕ کافه ترانه</div>
+      <div class="nav-links">
+        <a href="#">خانه</a>
+        <a href="#">منو</a>
+        <a href="#">گالری</a>
+        <a href="#">تماس</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1>به کافه ترانه خوش اومدی</h1>
+      <p>جایی برای لحظه‌های خوب، قهوه خوب، و حال خوب</p>
+      <a href="#" class="btn">مشاهده منو</a>
+    </div>
+
+    <!-- منو -->
+    <div class="menu-section">
+      <h2>منوی ما</h2>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="icon">☕</div>
+          <h3>اسپرسو</h3>
+          <p>قهوه خالص و غلیظ</p>
+        </div>
+        <div class="menu-card">
+          <div class="icon">🧋</div>
+          <h3>لاته</h3>
+          <p>قهوه با شیر کف‌دار</p>
+        </div>
+        <div class="menu-card">
+          <div class="icon">🍰</div>
+          <h3>کیک روز</h3>
+          <p>تازه و خانگی</p>
+        </div>
+        <div class="menu-card">
+          <div class="icon">🍵</div>
+          <h3>دمنوش</h3>
+          <p>ترکیب گیاهی ویژه</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- گالری -->
+    <div class="gallery-section">
+      <h2>فضای کافه</h2>
+      <div class="gallery">
+        <div class="gallery-item">☕</div>
+        <div class="gallery-item">🪑</div>
+        <div class="gallery-item">🌿</div>
+        <div class="gallery-item">🕯️</div>
+      </div>
+    </div>
+
+    <!-- تماس -->
+    <div class="contact-section">
+      <h2>تماس با ما</h2>
+      <div class="contact-box">
+        <input type="text" placeholder="نام شما">
+        <input type="text" placeholder="شماره تماس">
+        <textarea placeholder="پیام شما"></textarea>
+        <button>ارسال پیام</button>
+
+        <div class="contact-info">
+          📍 کرج، فلکه اول گوهردشت<br>
+          📞 ۰۹۱۲۰۰۰۰۰۰۰<br>
+          🕐 هر روز ۸ صبح تا ۱۱ شب
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>کافه ترانه — <span>کرج، فلکه اول گوهردشت</span> — ۰۹۱۲۰۰۰۰۰۰۰</p>
+    </footer>
+
+  </body>
+</html>
